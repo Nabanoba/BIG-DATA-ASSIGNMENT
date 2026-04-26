@@ -1,6 +1,18 @@
-# Ignore all TSV files
+# raw data
 *.tsv
+g_*.tsv
 
-# Ignore large datasets
 # databases
 *.db
+
+# cleaned datasets (REMOVE THESE FROM FUTURE TRACKING)
+output/cleaned/
+
+# but KEEP reports + graphs
+output/reports/
+output/graphs/
+
+# python cache
+__pycache__/
+*.pyc
+.vscode/
