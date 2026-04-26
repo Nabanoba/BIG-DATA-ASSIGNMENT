@@ -1,0 +1,6 @@
+# Ignore all TSV files
+*.tsv
+
+# Ignore large datasets
+# databases
+*.db

@@ -1,0 +1,331 @@
+{
+    "total_patents": 9454161,
+    "top_inventors": [
+        {
+            "name": "Shunpei Yamazaki",
+            "total_patents": 6787
+        },
+        {
+            "name": "Kia Silverbrook",
+            "total_patents": 4778
+        },
+        {
+            "name": "Tao Luo",
+            "total_patents": 4490
+        },
+        {
+            "name": "Jonathan P. Ive",
+            "total_patents": 2955
+        },
+        {
+            "name": "Junyi Li",
+            "total_patents": 2883
+        },
+        {
+            "name": "Kangguo Cheng",
+            "total_patents": 2835
+        },
+        {
+            "name": "Frederick E. Shelton, IV",
+            "total_patents": 2723
+        },
+        {
+            "name": "Peter Gaal",
+            "total_patents": 2554
+        },
+        {
+            "name": "Duncan Robert Kerr",
+            "total_patents": 2534
+        },
+        {
+            "name": "Bartley K. Andre",
+            "total_patents": 2478
+        }
+    ],
+    "top_companies": [
+        {
+            "company_name": "SAMSUNG DISPLAY CO., LTD.",
+            "total_patents": 174536
+        },
+        {
+            "company_name": "International Business Machines Corporation",
+            "total_patents": 164081
+        },
+        {
+            "company_name": "CANON KABUSHIKI KAISHA",
+            "total_patents": 91328
+        },
+        {
+            "company_name": "SONY GROUP CORPORATION",
+            "total_patents": 62908
+        },
+        {
+            "company_name": "Fujitsu Limited",
+            "total_patents": 56341
+        },
+        {
+            "company_name": "Kabushiki Kaisha Toshiba",
+            "total_patents": 53604
+        },
+        {
+            "company_name": "Intel Corporation",
+            "total_patents": 53218
+        },
+        {
+            "company_name": "General Electric Company",
+            "total_patents": 52040
+        },
+        {
+            "company_name": "LG ELECTRONICS INC.",
+            "total_patents": 50000
+        },
+        {
+            "company_name": "HITACHI, LTD.",
+            "total_patents": 46073
+        }
+    ],
+    "top_countries": [
+        {
+            "country": "US",
+            "total_patents": 4910902
+        },
+        {
+            "country": "JP",
+            "total_patents": 1559931
+        },
+        {
+            "country": "DE",
+            "total_patents": 587413
+        },
+        {
+            "country": "KR",
+            "total_patents": 413681
+        },
+        {
+            "country": "CN",
+            "total_patents": 403986
+        },
+        {
+            "country": "TW",
+            "total_patents": 294630
+        },
+        {
+            "country": "GB",
+            "total_patents": 257000
+        },
+        {
+            "country": "FR",
+            "total_patents": 241771
+        },
+        {
+            "country": "CA",
+            "total_patents": 236562
+        },
+        {
+            "country": "CH",
+            "total_patents": 111307
+        }
+    ],
+    "trends": [
+        {
+            "year": 1976,
+            "total_patents": 70941
+        },
+        {
+            "year": 1977,
+            "total_patents": 69820
+        },
+        {
+            "year": 1978,
+            "total_patents": 70586
+        },
+        {
+            "year": 1979,
+            "total_patents": 52484
+        },
+        {
+            "year": 1980,
+            "total_patents": 66212
+        },
+        {
+            "year": 1981,
+            "total_patents": 71112
+        },
+        {
+            "year": 1982,
+            "total_patents": 63292
+        },
+        {
+            "year": 1983,
+            "total_patents": 62019
+        },
+        {
+            "year": 1984,
+            "total_patents": 72689
+        },
+        {
+            "year": 1985,
+            "total_patents": 77276
+        },
+        {
+            "year": 1986,
+            "total_patents": 77050
+        },
+        {
+            "year": 1987,
+            "total_patents": 89591
+        },
+        {
+            "year": 1988,
+            "total_patents": 84449
+        },
+        {
+            "year": 1989,
+            "total_patents": 102719
+        },
+        {
+            "year": 1990,
+            "total_patents": 99275
+        },
+        {
+            "year": 1991,
+            "total_patents": 106891
+        },
+        {
+            "year": 1992,
+            "total_patents": 107540
+        },
+        {
+            "year": 1993,
+            "total_patents": 109933
+        },
+        {
+            "year": 1994,
+            "total_patents": 113723
+        },
+        {
+            "year": 1995,
+            "total_patents": 113954
+        },
+        {
+            "year": 1996,
+            "total_patents": 121811
+        },
+        {
+            "year": 1997,
+            "total_patents": 124181
+        },
+        {
+            "year": 1998,
+            "total_patents": 163265
+        },
+        {
+            "year": 1999,
+            "total_patents": 169252
+        },
+        {
+            "year": 2000,
+            "total_patents": 176192
+        },
+        {
+            "year": 2001,
+            "total_patents": 184172
+        },
+        {
+            "year": 2002,
+            "total_patents": 184494
+        },
+        {
+            "year": 2003,
+            "total_patents": 187104
+        },
+        {
+            "year": 2004,
+            "total_patents": 181413
+        },
+        {
+            "year": 2005,
+            "total_patents": 157829
+        },
+        {
+            "year": 2006,
+            "total_patents": 196489
+        },
+        {
+            "year": 2007,
+            "total_patents": 182978
+        },
+        {
+            "year": 2008,
+            "total_patents": 185260
+        },
+        {
+            "year": 2009,
+            "total_patents": 192052
+        },
+        {
+            "year": 2010,
+            "total_patents": 244599
+        },
+        {
+            "year": 2011,
+            "total_patents": 248101
+        },
+        {
+            "year": 2012,
+            "total_patents": 277285
+        },
+        {
+            "year": 2013,
+            "total_patents": 303658
+        },
+        {
+            "year": 2014,
+            "total_patents": 327014
+        },
+        {
+            "year": 2015,
+            "total_patents": 326969
+        },
+        {
+            "year": 2016,
+            "total_patents": 334674
+        },
+        {
+            "year": 2017,
+            "total_patents": 352587
+        },
+        {
+            "year": 2018,
+            "total_patents": 341104
+        },
+        {
+            "year": 2019,
+            "total_patents": 392618
+        },
+        {
+            "year": 2020,
+            "total_patents": 390572
+        },
+        {
+            "year": 2021,
+            "total_patents": 363829
+        },
+        {
+            "year": 2022,
+            "total_patents": 360417
+        },
+        {
+            "year": 2023,
+            "total_patents": 350093
+        },
+        {
+            "year": 2024,
+            "total_patents": 373852
+        },
+        {
+            "year": 2025,
+            "total_patents": 378741
+        }
+    ]
+}
