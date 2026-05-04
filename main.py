@@ -229,21 +229,89 @@ with open("output/reports/report.json", "w") as f:
     json.dump(report, f, indent=4)
 
 
-#  CONSOLE REPORT (REQUIRED)
+#  CONSOLE REPORT
 
-print("\n================ PATENT REPORT ================")
-print("Total Patents:", total_patents)
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+import pandas as pd
 
-print("\nTOP INVENTORS")
-print(top_inventors.to_string(index=False))
+# Create PDF file
+pdf = SimpleDocTemplate("output/reports/patent_report.pdf")
 
-print("\nTOP COMPANIES")
-print(top_companies.to_string(index=False))
+styles = getSampleStyleSheet()
+content = []
 
-print("\nTOP COUNTRIES")
-print(top_countries.to_string(index=False))
+# TITLE
+content.append(Paragraph("PATENT ANALYTICS REPORT", styles["Title"]))
+content.append(Spacer(1, 12))
 
-print("\nPIPELINE COMPLETE")
-print("FILES SAVED IN: output/cleaned & output/reports")
+# TOTAL PATENTS
+total_patents = pd.read_sql(
+    "SELECT COUNT(DISTINCT patent_id) AS total FROM patents",
+    conn
+).iloc[0, 0]
 
-conn.close()
+content.append(Paragraph(f"Total Patents: {total_patents:,}", styles["Normal"]))
+content.append(Spacer(1, 12))
+
+# TOP INVENTORS
+content.append(Paragraph("Top Inventors", styles["Heading2"]))
+
+for i, row in top_inventors.head(5).reset_index(drop=True).iterrows():
+    content.append(
+        Paragraph(
+            f"{i+1}. {row['name']} - {row['total_patents']:,}",
+            styles["Normal"]
+        )
+    )
+
+content.append(Spacer(1, 12))
+
+
+# TOP COMPANIES
+content.append(Paragraph("Top Companies", styles["Heading2"]))
+
+for i, row in top_companies.head(5).reset_index(drop=True).iterrows():
+    content.append(
+        Paragraph(
+            f"{i+1}. {row['company_name']} - {row['total_patents']:,}",
+            styles["Normal"]
+        )
+    )
+
+content.append(Spacer(1, 12))
+
+# TOP COUNTRIES
+content.append(Paragraph("Top Countries", styles["Heading2"]))
+
+for i, row in top_countries.head(5).reset_index(drop=True).iterrows():
+    content.append(
+        Paragraph(
+            f"{i+1}. {row['country']} - {row['total_patents']:,}",
+            styles["Normal"]
+        )
+    )
+
+content.append(Spacer(1, 12))
+
+# TREND SUMMARY
+content.append(Paragraph("Patent Trend Summary", styles["Heading2"]))
+
+if not trends.empty:
+    content.append(
+        Paragraph(
+            f"From {trends['year'].min()} to {trends['year'].max()}",
+            styles["Normal"]
+        )
+    )
+
+    peak_year = trends.loc[trends['total_patents'].idxmax(), 'year']
+    content.append(Paragraph(f"Peak Year: {peak_year}", styles["Normal"]))
+else:
+    content.append(Paragraph("No trend data available", styles["Normal"]))
+
+
+
+pdf.build(content)
+
+print("PDF report generated successfully at output/reports/patent_report.pdf")
